@@ -1,0 +1,857 @@
+/* News  */
+/* -------------------------------------------------------- */
+
+#body .inr-lft{
+	display: inline;
+	width: 585px;
+	margin: 0px 18px 0px 18px;
+	padding: 0px 0px 9px 0px;
+	z-index: 999999;
+}
+
+#body .inr-rgt{
+	width: 354px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 9px 0px;
+	overflow: hidden;
+	background: #F2F2F2 url('Images/bck.inr.btm.gif') no-repeat bottom left;
+	z-index: 0;	
+}
+
+#body .inr-rgt h4{
+	clear: left;
+	height: 9px;
+	overflow: hidden;
+	text-indent: -999px;
+	background: #FFFFFF url('Images/bck.inr.top.gif') no-repeat top left;
+}
+
+/* Top */
+
+#body .box div.top{
+	width: 948px;
+}
+
+#body .box div.top span.txt{
+	color: #CA0002;
+	line-height: 14px;
+	font-weight: bold;
+}
+
+#body .box div.top a.btn{
+	float: right;
+	margin-left: 6px;
+}
+
+/* Bottom */
+
+#body .box div.btm{
+	float: left;
+	width: 948px;
+	padding: 18px 18px 9px 18px;
+}
+
+#body .box div.btm b.ttl{
+	font-size: 28px;
+	line-height: 31px;
+	letter-spacing: -1px;
+}
+
+/* Tabs */
+
+#body .news .tab{
+	padding-bottom: 9px;
+	background: #DADADA url('Images/bck.top.top.gif') no-repeat bottom left;
+}
+
+#body .news .tab ul{
+	float: left;
+	width: 984px;	
+}
+
+#body .news h3{
+	visibility: hidden;
+}
+
+/* Content  */
+/* -------------------------------------------------------- */
+
+.content{
+	position: relative;
+	font-size: 12px;
+	padding-top: 36px;
+}
+
+/* Title */
+
+.content div.ttl{
+	display: block;
+}
+
+/* Html */
+
+.content div.htm{
+	font-size: 14px;
+}
+
+.content div.htm p{
+	margin-top: 12px;
+}
+
+.content div.htm .cnnRed{
+	color: #CC0002;
+}
+
+.content div.htm a.cnnRed{
+	color: #CC0002;
+}
+
+.content div.htm a.cnnRed *{
+	color: #CC0002;
+}
+
+.content div.htm .cnnRed *{
+	color: #CC0002;
+}
+
+.content div.htm a.kyw, .content div.htm a.kyw:visited{
+	color: #CA0002;
+}
+
+.content div.htm a.kyw.hover{
+	color: #000000;
+}
+
+/* Html Box */
+
+.content div.hbx{
+    float: right;
+    width: 200px;
+    padding: 5px;
+    margin: 18px 0px 18px 18px;
+    border: 1px solid #DFDFDF;    
+    background-color: #FFFFFF;
+}
+
+.content div.hbx span.him{
+	float: left;
+	width: 200px;	
+}
+
+.content div.hbx span.htt{
+    float: left;
+    width: 162px;    
+    margin: 9px 4px -10px 4px;
+    padding: 0px 15px 0px 15px;  
+    font-weight: bold;
+    font-size: 12px;
+    background: transparent url('Images/blt.qot.top.gif') no-repeat top left;
+    z-index: 1;
+}
+
+.content div.hbx span.hcn{
+    float: left;
+    width: 192px;
+    margin: 0px 4px 0px 4px;
+    padding: 19px 0px 4px 0px;    
+    font-size: 11px;
+    background: transparent url('Images/blt.qot.btm.gif') no-repeat top right;
+}
+
+/* Share */
+
+.content div.shr{    
+	float: left;
+	clear: both;
+	width: 292px;
+	margin: 0px 18px 0px 0px;
+	padding-bottom: 18px;
+}
+
+.content div.shr b.ttl{
+    float: left;
+    margin-right: 18px;
+    color: #A1A1A1;
+    font-size: 10px;
+    font-weight: normal;        
+}
+
+.content div.shr a, .content div.shr a:visited{
+    cursor: pointer;
+    float: left;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    margin-right: 6px;
+}
+
+/* Bullets */
+
+.content div.blt{
+	float: left;
+	clear: left;
+	width: 180px;	
+	margin-top: 0px;
+	padding-bottom: 18px;
+	font-size: 11px;	
+}
+
+.content div.blt ul.lst li{
+	line-height: 14px;
+}
+
+/* Navigation */
+
+.content div.nav{
+	float: left;
+	width: 385px;
+	padding: 24px 0px 24px 200px;
+}
+
+.content div.nav b{
+	display: none;
+}
+
+.content div.nav a.btn{
+	margin-left: 6px;
+}
+
+/* Topics */
+
+.content div.tpc{
+	float: left;
+	color: #949494;
+	font-weight: bold;
+}
+
+.content div.tpc b{
+	color: #000000;
+}
+
+.content div.tpc a, .content div.tpc a:visited{
+	margin: 12px 0px 0px 0px;
+	padding: 0px 2px 0px 2px;
+	font-size: 11px;
+	text-decoration: underline;
+}
+
+.content div.tpc a.end, .content div.tpc a.end:visited{
+	font-size: 10px;
+	font-weight: normal;
+}
+
+/* Action */
+
+.content div.act{
+	position: relative;
+	float: left;
+	clear: both;
+	width: 585px;
+	height: 15px;
+	margin: 18px 0px 0px 0px;
+	padding: 9px 0px 9px 0px;
+	border-top: 1px solid #E8E8E8;	
+}
+
+.content div.act a.btn{
+	float: right;
+	margin-left: 6px;
+}
+
+/* Font Size  */
+/* -------------------------------------------------------- */
+
+.fontsize{
+	position: absolute;
+	top: 9px;
+	right: 0px;
+}
+
+.fontsize *{
+	float: left;
+	margin-left: 6px;
+}
+
+.fontsize span{
+	color: #777777;
+	font-size: 10px;
+	font-family: Tahoma;
+}
+
+/* Photo Box  */
+/* -------------------------------------------------------- */
+
+.photobox{
+	float: left;
+	width: 292px;
+	margin: 0px 18px 0px 0px;
+	padding-bottom: 18px;
+}
+
+.photobox ul.lst{
+	float: left;
+}
+
+.photobox ul.lst li{
+	display: none;
+	float: left;
+}
+
+.photobox ul.lst li.act{
+	display: inline;
+}
+
+.photobox ul.lst li img{
+	float: left;
+}
+
+.photobox ul.lst li b{
+	float: left;
+	width: 272px;
+	padding: 3px 9px 4px 9px;
+	overflow: hidden;
+	color: #666666;
+	font-size: 10px;
+	border: 1px solid #DFDFDF;
+	border-top: none;
+	background-color: #FFFFFF;
+}
+
+.photobox div.pgr{
+	display: none;
+	float: left;
+	width: 202px;
+	height: 19px;
+	padding: 5px 0px 5px 90px;
+	background: #FFFFFF url('Images/bck.pht.btm.gif') no-repeat bottom left;
+}
+
+.photobox a.lnk{
+	float: right;
+	margin-top: 3px;
+	font-size: 10px;
+	font-weight: bold;	
+}
+
+/* Comments  */
+/* -------------------------------------------------------- */
+
+.comments{
+	float: left;
+	width: 585px;
+	margin-top: 9px;
+}
+
+.comments div.ttl{
+	float: left;
+	width: 585px;
+}
+
+.comments div.ttl a{
+	float: left;
+}
+
+.comments div.ttl b.hdr{	
+	width: 502px;
+}
+
+.comments div.lst{
+	float: left;
+	width: 547px;
+	padding: 18px;
+	border-top: 1px solid #DFDFDF;
+	border-left: 1px solid #E8E8E8;
+	border-right: 1px solid #E8E8E8;
+}
+
+.comments div.lst li{
+	padding-bottom: 9px;
+}
+
+.comments div.lst b{
+	font-size: 12px;
+}
+
+.comments div.lst span{
+	color: #ACACAC;
+	font-size: 11px;
+}
+
+.comments div.psm{
+	float: left;
+	width: 567px;
+	padding: 0px 9px 9px 9px;
+	background: #FFFFFF url('Images/bck.alt.btm.gif') no-repeat bottom left;
+}
+
+.comments div.psm div{
+	float: right;
+}
+
+.comments div.psm a, .comments div.psm a:visited, .comments div.psm span.act{
+	float: left;
+	width: 22px;
+	height: 16px;
+	margin-left: 3px;
+	color: #757575;
+	text-align: center;
+	font-size: 10px;
+	font-weight: bold;
+	line-height: 14px;
+	background-image: url('Images/btn.gif');
+	background-repeat: no-repeat;
+	background-position: -22px -1321px;
+}
+
+.comments div.psm a:hover{
+	color: #FFFFFF;
+	background-position: 0px -1321px;
+}
+
+.comments div.psm a.prv, .comments div.psm a.prv:visited{
+	overflow: hidden;
+	text-indent: -999px;
+	background-position: -66px -1321px;
+}
+
+.comments div.psm a.prv:hover{
+	background-position: -44px -1321px;
+}
+
+.comments div.psm a.act, .comments div.psm a.act:visited,  .comments div.psm span.act{
+	cursor: default;
+	color: #FFFFFF;
+	background-position: 0px -1321px;
+}
+
+.comments div.psm a.nxt, .comments div.psm a.nxt:visited{
+	overflow: hidden;
+	text-indent: -999px;
+	background-position: -110px -1321px;
+}
+
+.comments div.psm a.nxt:hover{
+	background-position: -88px -1321px;
+}
+
+/* Latest News  */
+/* -------------------------------------------------------- */
+
+.latestnews{
+	float: left;
+	width: 585px;
+	margin-top: 18px;	
+}
+
+.latestnews a.ttl{
+	float: left;
+	width: 549px;
+	padding-bottom: 12px;
+	font-size: 22px;
+	padding: 0px 18px 9px 18px;			
+	border-bottom: 1px solid #DFDFDF;
+}
+
+.latestnews a.ttl b{
+    color: #000000;
+}
+
+.latestnews a.all{
+	float: right;
+	margin-top: 9px;
+	font-weight: bold;	
+}
+
+.latestnews ul{
+	float: left;
+	width: 549px;	
+	padding: 0px 18px 0px 18px;		
+}
+
+.latestnews ul li{
+	float: left;
+	width: 50%;
+	margin-top: 18px;
+}
+
+.latestnews ul a{
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.latestnews ul a.img{
+	display: inline;
+	float: left;	
+	margin-right: 12px;
+}
+
+.latestnews ul a.img img{
+	float: left;	
+}
+
+.latestnews ul a.lnk{	
+	display: block;
+	padding-right: 9px;	
+	font-size: 14px;
+	font-weight: bold;	
+	line-height: 16px;	
+}
+
+/* Share  */
+/* -------------------------------------------------------- */
+
+.share{
+	position: absolute;
+	width: 138px;
+	height: 254px;
+	z-index: 999999;
+	top: -999px;
+	left: -999px;
+	background: transparent url('Images/bck.shr.png');
+}
+
+.share div.inr{
+	display: inline;
+	float: left;
+	width: 98px;
+	height: 214px;
+	margin: 20px 0px 0px 20px;
+	overflow: hidden;
+	background-color: #FFFFFF;
+}
+
+.share div.inr a{
+	display: block;
+	margin-top: 6px;
+	font-size: 10px;
+	line-height: 16px;
+}
+
+.share div.inr b{
+	margin-right: 6px;
+}
+
+.share div.inr span{
+	color: #949494;
+	font-size: 10px;
+}
+
+.share div.inr a.btn{
+	float: right;
+	width: 12px;
+	margin-top: -12px;
+}
+
+/* Sub Content */
+/* -------------------------------------------------------- */
+
+.subcontent{
+    position: relative;
+	float: left;
+	width: 100%;
+	margin-top: 18px;
+}
+
+.subcontent div.blt{
+	float: left;
+	width: 180px;
+	margin-top: 0px;
+	padding-right: 18px;
+	padding-bottom: 18px;
+	font-size: 11px;
+}
+
+.subcontent div.blt ul.lst li{
+	line-height: 14px;
+}
+
+.subcontent div.htm b.ttl{
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 24px;		
+}
+
+.subcontent div.htm a.lnk, .subcontent div.htm a.lnk:visited{	
+	position: absolute;
+	float: left;
+    top: 6px;
+    left: 300px;
+	color: #CC0002;
+	font-size: 11px;	
+	line-height: 12px;
+}
+
+.subcontent div.htm a.lnk:hover{	
+	color: #FFFFFF;
+	background-color: #CC0002;
+}
+
+.subcontent div.tpc{
+	margin-top: 18px;
+	color: #949494;
+	font-weight: bold;
+}
+
+.subcontent div.tpc b{
+	color: #000000;
+}
+
+.subcontent div.tpc a, .subcontent div.tpc a:visited{
+	margin: 12px 0px 0px 0px;
+	padding: 0px 2px 0px 2px;
+	font-size: 11px;
+	text-decoration: underline;
+}
+
+.subcontent div.tpc a.end, .subcontent div.tpc a.end:visited{
+	font-size: 10px;
+	font-weight: normal;
+}
+
+/* Column  */
+/* -------------------------------------------------------- */
+
+.inr-rgt .nav{
+	position: relative;
+	float: right;
+	margin: -45px -9px 0px 0px;
+}
+
+.inr-rgt .nav a{
+	margin-left: 9px;
+}
+
+.inr-rgt .ibx{
+	display: inline;
+	float: left;
+	width: 336px;
+	margin: 9px 9px 0px 9px;
+	padding: 0px 0px 9px 0px;
+	background-color: #FFFFFF;
+	background: #FFFFFF url('Images/bck.ibx.btm.gif') no-repeat bottom left;
+}
+
+.inr-rgt .ibx-frs{
+	margin-top: 0px;
+}
+
+#body .inr-rgt .ibx h4{
+	background: #FFFFFF url('Images/bck.ibx.top.gif') no-repeat top left;
+}
+
+
+/* Survey  */
+/* -------------------------------------------------------- */
+
+#body .survey div.hdr,
+#body .survey div.cnt{
+	width: 298px;
+}
+
+#body .survey div.hdr{
+	background-position: 266px 8px;
+}
+
+
+div.bnr-adn{
+	width: 565px;
+	margin-top: 18px;
+	margin-left: 0px;
+}
+
+/* Accordion  */
+/* -------------------------------------------------------- */
+
+.accordion a.ttl{
+	width: 318px;
+}
+
+.accordion div.ttl b{
+	width: 313px;
+}
+
+.accordion div.inr{
+	width: 318px;
+}
+
+/* Other News  */
+/* -------------------------------------------------------- */
+
+#body .othernews{        
+    width: 585px;  
+    margin: 18px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background-image: none;
+}
+
+#body .othernews h3{
+    display: none;
+}
+
+#body .othernews div.top{    
+    width: 549px;
+}
+
+#body .othernews table.lst{    
+    width: 549px;
+}
+
+/* Video  */
+/* -------------------------------------------------------- */
+
+#body .video{   
+    display: inline;     
+    width: 336px;  
+    margin: 9px 9px 0px 9px;
+    padding: 0px 0px 9px 0px;
+    background: #FFFFFF url('Images/bck.ibx.btm.gif') no-repeat left bottom;
+}
+
+#body .video h3{
+    visibility: visible;
+    background: #FFFFFF url('Images/bck.ibx.top.gif') no-repeat left top;
+}
+
+#body .video div.hdr, 
+#body .video div.cnt,
+#body .video div.ftr{    
+    width: 298px;
+    margin: 0px 9px 0px 9px;
+}
+
+#body .video div.pgr{
+	position: absolute;
+	display: inline;
+	float: right;
+	top: 11px;
+	right: 10px;
+}
+
+/* Photo  */
+/* -------------------------------------------------------- */
+
+#body .photo{
+    display: inline;        
+    width: 336px;  
+    margin: 9px 9px 0px 9px;
+    padding: 0px 0px 9px 0px;
+    background: #FFFFFF url('Images/bck.ibx.btm.gif') no-repeat left bottom;
+}
+
+#body .photo h3{
+    visibility: visible;
+    background: #FFFFFF url('Images/bck.ibx.top.gif') no-repeat 0px 0px;
+}
+
+#body .photo .hdr, 
+#body .photo .ftr{    
+    width: 298px;
+    margin: 0px 9px 0px 9px;
+}
+
+#body .photo div.cnt{
+    width: 292px;
+    margin: 0px 9px 0px 9px;
+}
+
+#body .photo .cnt a.img{
+    width: 292px;
+    overflow: hidden;
+}
+
+#body .photo .cnt a.txt{
+    width: 292px;
+}
+
+#body .photo div.tmb-glr{
+    margin-left: 0px;
+}
+
+/* Keywords  */
+/* -------------------------------------------------------- */
+
+.keywords{
+    position: absolute;
+    display: none;
+	float: left;
+	width: 180px;
+	height: 130px;
+	top: -999px;
+	left: -999px;
+	z-index: 999;	
+}
+
+.keywords .bck{
+	float: left;
+	width: 180px;
+	height: 130px;
+	overflow: hidden;
+	background: transparent url('Images/bck.kyw.png') no-repeat 0px 0px;
+}
+
+.keywords .cnt{    
+    position: relative;
+    display: inline;
+	float: left;
+	width: 140px;
+	height: 72px;
+	margin: 11px 0px -101px 11px;
+	padding: 9px 9px 9px 9px;
+	z-index: 1;	
+	background-color: #FFFFFF;
+}
+
+.keywords .cnt .ttl{    
+    position: relative;
+    cursor: pointer;
+    float: left;
+    width: 140px;
+    font-size: 14px;
+    background: #FFFFFF url('Images/btn.cls.gif') no-repeat right top; 
+}
+
+.keywords .cnt ul{  
+    clear: both;      
+    margin-top: 3px;
+}
+
+.keywords .cnt li{
+    float: left;
+    width: 122px; 
+    font-size: 11px;
+    font-weight: bold;  
+    padding: 3px 9px 0px 9px;    
+    background: #FFFFFF url('Images/blt.crc.gif') no-repeat 0px 9px;  
+}
+
+/* photoGal, videoGal  */
+/* -------------------------------------------------------- */
+
+.content table.gls td{
+}
+
+.content table.gls div.crn{ 
+    position: relative;    
+    float: left;
+    padding: 6px;
+    width: 256px;    
+    margin-top: 12px;
+    border: 1px solid #DFDFDF;
+}
+
+.content table.gls a.img, .content table.gls a.img img{
+    float: left;
+}
+
+.content table.gls a.lnk, table.gls a.lnk:visited{
+    position: absolute;
+    top: 20px;
+    left: 72px;    
+    color: #CA0002;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+table.gls a.lnk:hover{
+    color: #000000;
+}

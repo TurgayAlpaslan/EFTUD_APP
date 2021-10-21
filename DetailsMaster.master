@@ -1,0 +1,168 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DetailsMaster.master.cs" Inherits="DetailsMaster" %>
+<%@ Register Src="TopMenuControl.ascx" TagName="TopMenuControl" TagPrefix="uc1" %>
+<%@ Register Src="PhotoGallery.ascx" TagName="PhotoGallery" TagPrefix="uc2" %>
+<%@ Register Src="VideoGallery.ascx" TagName="VideoGallery" TagPrefix="uc3" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link rel="stylesheet" type="text/css" href="general.css" />
+ <link rel="stylesheet" type="text/css" href="Biograpy.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="player.css" />
+    <link rel="stylesheet" type="text/css" href="news.css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />  
+    <link rel="shortcut icon" href="" />
+
+    <script type="text/javascript" src="script.min.js"></script>
+    <script type="text/javascript" src="functions.js"></script>
+
+    
+</head>
+<body>
+
+    <script type="text/javascript" src="script.min1.js"></script>
+
+    <form id="form1" runat="server">
+        <div>
+            <div id="container">
+                <div id="header">
+                <div style="background-color:#FFFFFF; background-image:url('images/banner3.jpg'); background-repeat:no-repeat; width:100%; height:142px;"></div>
+                <div id="topMenuBar" style="width:100%; background-color:#ffffff;">
+                    &nbsp;<uc1:TopMenuControl ID="TopMenuControl1" runat="server" />
+               
+                </div>
+            </div>
+                <div id="body">
+                    <div id="lastminute">
+                    </div>
+                    <div class="keywords">
+                        <div class="cnt">
+                        </div>
+                        <div class="bck">
+                            &nbsp;</div>
+                    </div>
+                    <div class="cnt-man">
+                        <a name="photogal"></a>
+                        <div class="cnt-top">
+                            <div class="box">
+                                <h3>
+                                </h3>
+                                <div class="top">
+                                    &nbsp;<span class="txt"><asp:Label ID="lblAddedDate" runat="server" Text="" /> </span>&nbsp;&nbsp; &nbsp;&nbsp;
+                                </div>
+                                <div class="btm">
+                                    <b class="ttl"><span style="font-size:14pt"><asp:Label ID="lblCaption" runat="server" /></span></b>
+                                </div>
+                            </div>
+                            <div class="box news">
+                                <h3>
+                                    Haber</h3>
+                                <div class="inr-lft">        <br />                          
+                                   <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+                                   
+                                   
+                                           </asp:contentplaceholder>
+                                </div>
+                                <div class="inr-rgt">
+                                    <h4>
+                                        Gezinti</h4>
+                                    <div class="box video carousel">
+                                        <h3>
+                                            Video</h3>
+                                        <div class="hdr jrt">
+                                            <a target="_blank" href="getvideo.aspx" class="hdr"><b>Video Galeri</b> »</a>
+                                            <div class="pgr">
+                                                <a href="javascript:;" class="prv">Geri</a> <a href="javascript:;" class="nxt">Ýleri</a>
+                                            </div>
+                                        </div>
+                                        <div class="cnt">
+                                            <div class="tmb tmb-sml">
+                                                <ul>
+                                                   <uc3:VideoGallery ID="VideoGallery2" runat="server" />
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="ftr jrb">
+                                          
+                                        </div>
+                                    </div>
+                                    <div class="box photo carousel">
+                                        <h3>
+                                            Foto Galeri</h3>
+                                        <div class="hdr jrt">
+                                            <a target="_blank" href="GetAlbum.aspx" class="hdr"><b>Foto Galeri</b> »</a>
+                                        </div>
+                                        <div class="cnt" id="photoGalleryContent">
+                                            <a href="javascript:;" class="img">&nbsp;</a>
+                                        </div>
+                                        <div class="ftr">
+                                            <div class="tmb tmb-glr">
+                                                <ul>
+                                                    <uc2:PhotoGallery ID="PhotoGallery1" runat="server" />                                                                                                                                                       
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="ftr jrb">
+                                            <div class="pgr">
+                                                <a href="javascript:;" class="prv">Geri</a> <a href="javascript:;" class="nxt">Ýleri</a>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer">
+                <div id="fbtm">
+                    <h2>
+                        Menü</h2>
+                    <div class="nav">
+                        <h3>
+                            Gezinti</h3>
+                        <div class="top">
+                            <%--<a id="ctl00_ctl00_ContentPlaceHolder1_CnnTurkFooter1_Footerlist_ctl00_MainHyperLink"
+                                title="Ana Sayfa" href="/default.aspx">Ana Sayfa</a> &nbsp;|&nbsp; <a id="ctl00_ctl00_ContentPlaceHolder1_CnnTurkFooter1_Footerlist_ctl02_MainHyperLink"
+                                    title="Türkiye" href="/turkiye/default.aspx">Türkiye</a> &nbsp;|&nbsp; <a id="ctl00_ctl00_ContentPlaceHolder1_CnnTurkFooter1_Footerlist_ctl04_MainHyperLink"
+                                        title="Dünya" href="/dunya/default.aspx">Dünya</a> &nbsp;|&nbsp; <a id="ctl00_ctl00_ContentPlaceHolder1_CnnTurkFooter1_Footerlist_ctl06_MainHyperLink"
+                                            title="Ekonomi" href="/ekonomi/default.aspx">Ekonomi</a> &nbsp;|&nbsp;
+                            <a id="ctl00_ctl00_ContentPlaceHolder1_CnnTurkFooter1_Footerlist_ctl08_MainHyperLink"
+                                title="Spor" href="/spor/default.aspx">Spor</a> &nbsp;|&nbsp; <a id="ctl00_ctl00_ContentPlaceHolder1_CnnTurkFooter1_Footerlist_ctl10_MainHyperLink"
+                                    title="Saðlýk" href="/saglik/default.aspx">Saðlýk</a> &nbsp;|&nbsp; <a id="ctl00_ctl00_ContentPlaceHolder1_CnnTurkFooter1_Footerlist_ctl12_MainHyperLink"
+                                        title="Kültür Sanat" href="/kultur.sanat/default.aspx">Kültür Sanat</a>
+                            &nbsp;|&nbsp; <a id="ctl00_ctl00_ContentPlaceHolder1_CnnTurkFooter1_Footerlist_ctl14_MainHyperLink"
+                                title="Yaþam" href="/yasam/default.aspx">Yaþam</a> &nbsp;|&nbsp; <a id="ctl00_ctl00_ContentPlaceHolder1_CnnTurkFooter1_Footerlist_ctl16_MainHyperLink"
+                                    title="Bilim Teknoloji" href="/bilim.teknoloji/default.aspx">Bilim Teknoloji</a>
+                            &nbsp;|&nbsp; <a id="ctl00_ctl00_ContentPlaceHolder1_CnnTurkFooter1_Footerlist_ctl18_MainHyperLink"
+                                title="Tatil" href="http://tatil.cnnturk.com/index.aspx">Tatil</a> &nbsp;|&nbsp;
+                            <a id="ctl00_ctl00_ContentPlaceHolder1_CnnTurkFooter1_Footerlist_ctl20_MainHyperLink"
+                                title="Hava Yol" href="/havadurumu/default.aspx">Hava Yol</a> &nbsp;|&nbsp;
+                            <a id="ctl00_ctl00_ContentPlaceHolder1_CnnTurkFooter1_Footerlist_ctl22_MainHyperLink"
+                                title="Haber SMS" href="/servisler/sms/default.aspx">Haber SMS</a> &nbsp;|&nbsp;
+                            <a id="ctl00_ctl00_ContentPlaceHolder1_CnnTurkFooter1_Footerlist_ctl24_MainHyperLink"
+                                title="RSS" href="/servisler/rss/default.aspx">RSS</a> &nbsp;|&nbsp; <a id="ctl00_ctl00_ContentPlaceHolder1_CnnTurkFooter1_Footerlist_ctl26_MainHyperLink"
+                                    title="Yayýn Akýþý" href="/cnnturktv/yayin_akisi/default.aspx">Yayýn Akýþý</a>
+                            &nbsp;|&nbsp; <a id="ctl00_ctl00_ContentPlaceHolder1_CnnTurkFooter1_Footerlist_ctl28_MainHyperLink"
+                                title="TV" href="/cnnturktv/index.aspx">TV</a> &nbsp;|&nbsp; <a id="ctl00_ctl00_ContentPlaceHolder1_CnnTurkFooter1_Footerlist_ctl30_MainHyperLink"
+                                    title="Basýn Odasý" href="/kurumsaliletisim/default.aspx">Basýn Odasý</a>
+                            &nbsp;|&nbsp; <a id="ctl00_ctl00_ContentPlaceHolder1_CnnTurkFooter1_Footerlist_ctl32_MainHyperLink"
+                                title="Sanal Stadyum" href="http://sanalstadyum.cnnturk.com">Sanal Stadyum</a>
+                            &nbsp;|&nbsp; <a id="ctl00_ctl00_ContentPlaceHolder1_CnnTurkFooter1_Footerlist_ctl34_MainHyperLink"
+                                title="Fantezi Futbol" href="http://fantezifutbol.cnnturk.com/Site">Fantezi Futbol</a>--%>
+                        </div>
+                        <div class="btm">
+                          
+                            <p style="text-align:center;">
+                                <span>&copy; 2010 Designed and Programmed by Emre METE. All rights reserved</span>
+                            </p>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </form>
+   
+</body>
+</html>
+ 

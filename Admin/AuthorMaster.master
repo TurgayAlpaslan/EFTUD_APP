@@ -1,0 +1,63 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AuthorMaster.master.cs" Inherits="Admin_AuthorMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Yönetici Konsolu</title>
+
+    <script type="text/javascript" src="images/mootools.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
+    <link rel="stylesheet" href="images/style.css" type="text/css" />
+    <link rel="stylesheet" href="images/Frame.css" type="text/css" />
+    <link rel="stylesheet" href="images/DatePicker.css" type="text/css" />
+    <link rel="stylesheet" href="images/accordion.css" type="text/css" />
+    <%--<script type="text/javascript" src="images/accordion.js"></script>  --%>
+
+    <script type="text/javascript">
+    function YeniPencereAc(url,boyutlandirma,genislik,yukseklik)
+    {
+        var ozellikler;
+        ozellikler="toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes,"+" resizable="+boyutlandirma+", copyhistory=no, width="+genislik+", height="+yukseklik;
+        window.open(url,"_blank",ozellikler);
+    }    
+	
+	
+    </script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="bg">
+            <div id="sadrzaj">
+                <%--<div id="toplinks">
+				<a href="../anasayfa.aspx">Ana Sayfa</a>
+				<a href="#">Blog</a>
+				<a href="#">Forum</a>
+				<a href="#">Search</a>
+				<a href="#">Submit URL</a>
+				<a href="#">Login</a>
+			</div>--%>
+                <div id="zaglavlje">
+                    <div id="title">
+                        <a href="Default.aspx">Yönetici Paneli</a>
+                    </div>
+                </div>
+                <div id="navigacija">
+                    <ul>
+                    <li><a href="../Default.aspx">Ana Sayfa</a></li>
+                        <li><a href="MyProfile.aspx">Profilim</a></li>
+                         <li><a href="AddUpdateMyArticle.aspx">Yazı Ekle</a></li>
+                        <li><a href="MyArticles.aspx">Yazılarım</a></li>
+                        <li><asp:LinkButton runat="server" id="btnCloseSession" Text="Oturumu Kapat" OnClick="btnCloseSession_Click"  /></li>
+                    </ul>
+                </div>
+                <div id="clanci">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

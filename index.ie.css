@@ -1,0 +1,18 @@
+/* Size */
+/* -------------------------------------------------------- */
+
+.box div.spt ul.lst li.sml{
+	height: 45px;
+}
+
+.accordion ul.lst a, .accordion ul.lst a:visited{
+	height: 16px;
+}
+
+.accordion ul.lst a img, .accordion ul.lst a:visited img{
+	margin-bottom: -1px;
+}
+
+.accordion ul.lst li.btm{
+	margin-bottom: -3px;
+}

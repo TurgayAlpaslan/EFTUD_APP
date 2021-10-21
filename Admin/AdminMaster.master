@@ -1,0 +1,74 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs"
+    Inherits="Admin_AdminMaster" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Yönetici Konsolu</title>
+
+    <script type="text/javascript" src="images/mootools.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
+    <link rel="stylesheet" href="images/style.css" type="text/css" />
+    <link rel="stylesheet" href="images/Frame.css" type="text/css" />
+    <link rel="stylesheet" href="images/DatePicker.css" type="text/css" />
+    <link rel="stylesheet" href="images/accordion.css" type="text/css" />
+    <%--<script type="text/javascript" src="images/accordion.js"></script>  --%>
+
+    <script type="text/javascript">
+    function YeniPencereAc(url,boyutlandirma,genislik,yukseklik)
+    {
+        var ozellikler;
+        ozellikler="toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes,"+" resizable="+boyutlandirma+", copyhistory=no, width="+genislik+", height="+yukseklik;
+        window.open(url,"_blank",ozellikler);
+    }    
+	
+	
+    </script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="bg">
+            <div id="sadrzaj">
+                <%--<div id="toplinks">
+				<a href="../anasayfa.aspx">Ana Sayfa</a>
+				<a href="#">Blog</a>
+				<a href="#">Forum</a>
+				<a href="#">Search</a>
+				<a href="#">Submit URL</a>
+				<a href="#">Login</a>
+			</div>--%>
+                <div id="zaglavlje">
+                    <div id="title">
+                        <a href="Default.aspx">Yönetici Paneli</a>
+                    </div>
+                </div>
+                <div id="navigacija">
+                    <ul>
+                        <li><a href="../Default.aspx">Ana Sayfa</a></li>
+                        <li><a href="BasicSettings.aspx">Temel Ayarlar</a></li>
+                        <li><a href="Pages.aspx">Sayfalar</a></li>
+                        <li><a href="TopMenu.aspx">Üst Menu</a></li>
+                        <li><a href="News.aspx">Haberler</a></li>
+                        <li><a href="Albums.aspx">Albümler</a></li>
+                         <li><a href="Videoes.aspx">Videolar</a></li>
+                        <li><a href="Authors.aspx">Yazarlar</a></li>
+                        <li><a href="Users.aspx">Sistem Yöneticileri</a></li>
+                        <li><a href="Educators.aspx">Eğitmenler</a></li>
+                        <li><a href="Members.aspx">Üyelerimiz</a></li>
+                        <li><a href="Administration.aspx">Yönetim Kurulu</a></li>
+                        <li><a href="Biographies.aspx">Biyografiler</a></li>
+                        <li><a href="notifications.aspx">Duyurular</a></li>
+                        <li><a href="Newspapers.aspx">Basında Biz</a></li>
+                        <li><asp:LinkButton runat="server" id="btnCloseSession" Text="Oturumu Kapat" OnClick="btnCloseSession_Click" ValidationGroup="closeSession" /></li>
+                    </ul>
+                </div>
+                <div id="clanci">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

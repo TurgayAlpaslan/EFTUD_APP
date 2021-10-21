@@ -1,0 +1,144 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DefaultMaster.master.cs"
+    Inherits="DefaultMaster" %>
+<%@ Register Src="PhotoGallery.ascx" TagName="PhotoGallery" TagPrefix="uc2" %>
+<%@ Register Src="VideoGallery.ascx" TagName="VideoGallery" TagPrefix="uc3" %>
+<%@ Register Src="TopMenuControl.ascx" TagName="TopMenuControl" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-9" />
+    <meta name="keywords" content="" />
+
+    <script type="text/javascript" src="script.min.js"></script>
+    <script type="text/javascript" src="functions.js"></script>
+    <link rel="stylesheet" href="lightbox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="lightbox.js"></script>
+
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="general.css" />
+    <link rel="stylesheet" type="text/css" href="Biograpy.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="refresh" content="180" />
+    <!--[if IE 6]><link rel="stylesheet" type="text/css" href="index.ie.css" /><![endif]-->
+    <link rel="shortcut icon" href="" />
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <script type="text/javascript" src="script.min1.js"></script>
+
+        <div id="container">
+            <div id="header">
+                <div style="background-color:#FFFFFF;background-image:url('images/banner3.jpg'); background-repeat:no-repeat; width:100%; height:142px;"></div>
+                <div id="topMenuBar" style="width:100%; background-color:#ffffff;">
+                <uc1:TopMenuControl ID="TopMenuControl1" runat="server" />
+                </div>
+            </div>
+            <div id="body">
+                <div id="lastminute">
+                </div>
+                <div class="cnt-man">                   
+                    <div class="cnt-lft">
+                        <div>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                    <div class="cnt-rgt">
+                        <div class="box photo carousel">
+                            <h3>
+                                Foto Galeri</h3>
+                            <div class="hdr jrt">
+                                <a target="_blank" href="getalbum.aspx" class="hdr"><b>Foto Galeri</b> »</a>
+                            </div>
+                            <div class="cnt" id="photoGalleryContent">
+                                <a href="javascript:;" class="img">&nbsp;</a>
+                            </div>
+                            <div class="ftr">
+                                <div class="tmb tmb-glr">
+                                    <ul>
+                                        <uc2:PhotoGallery ID="PhotoGallery1" runat="server" />
+                                    
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ftr jrb">
+                                <div class="pgr">
+                                    <a href="javascript:;" class="prv">Geri</a> <a href="javascript:;" class="nxt">İleri</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box video carousel">
+                            <h3>
+                                Video</h3>
+                            <div class="hdr jrt">
+                                <a href="getvideo.aspx" class="hdr"><b>Video Galeri</b> »</a>
+                                <div class="pgr">
+                                    <a href="javascript:;" class="prv">Geri</a> <a href="javascript:;" class="nxt">İleri</a>
+                                </div>
+                            </div>
+                            <div class="cnt">
+                                <div class="tmb tmb-sml" style="left: 0px; top: 0px">
+                                    <ul>
+                                        <uc3:VideoGallery ID="VideoGallery2" runat="server" />
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ftr jrb">
+                               
+                            </div>
+                        </div>
+                        <div class="box ireport carousel">
+                            <h3>
+                                Duyurular</h3>
+                            <div class="hdr jrt">
+                                <a href="notifications.aspx" class="hdr"><b>Duyurular</b> »</a>
+                                <div class="pgr">
+                                    <a href="javascript:;" class="prv">Geri</a> <a href="javascript:;" class="nxt">İleri</a>
+                                </div>
+                            </div>
+                            <div class="cnt">
+                                <div class="tmb tmb-sml">
+                                    <ul>
+                                        <asp:Repeater ID="Repeater2" runat="server" DataSourceID="objNotification">
+                                            <ItemTemplate>
+                                                <li><a href="notifications.aspx?NotificationID=<%# Eval("NewsID") %>" title="">
+                                                    <%# Eval("Caption") %>
+                                                </a></li>
+                                            </ItemTemplate>
+                                        </asp:Repeater>
+                                        <asp:ObjectDataSource ID="objNotification" runat="server" SelectMethod="GetNotifications"
+                                            TypeName="NotificationManager"></asp:ObjectDataSource>                                       
+                                    </ul>
+                                </div>       <br /> <br /><br />                        
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div id="fbtm">
+                    <h2>
+                        Menü</h2>
+                    <div class="nav">
+                        <h3>
+                            Gezinti</h3>
+                        <div class="top">                           
+                        </div>
+                        <div class="btm">
+                          
+                            <p style="text-align:center;">
+                                <span>&copy; 2010 Designed and Programmed by Emre METE. All rights reserved</span>
+                            </p>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

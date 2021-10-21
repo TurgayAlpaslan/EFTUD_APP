@@ -1,0 +1,54 @@
+.children
+{
+margin-left:0;
+padding:0;
+}
+
+#main_menu 
+{
+	margin:10px 0 0 0;
+	background-color:#CC0001;
+	height:60px;
+	/*
+	background:#CC0001 url(images/navback.png) repeat-x;
+*/
+	
+}
+#nav2 {
+	padding-right: 0px; padding-left: 0px; padding-bottom: 0px; margin: 0px; padding-top: 0px; list-style-type: none
+}
+#nav2 {
+	 font-weight: bold; font-size: 14px; margin: 0px;  line-height: 30px;  height: 30px;
+}
+#nav2 li 
+{
+	display:block;
+	float: left; line-height: 30px; list-style-type: none
+}
+#nav2 li a 
+{	
+	text-decoration:none;
+	border-bottom:solid 1px #ccc;
+	border-right: #ccc 1px solid; padding-right: 13px; display: block; padding-left: 13px; font-weight: bold; font-size: 11px; padding-bottom: 0px; color: #ffffff; line-height: 30px; padding-top: 0px; font-family: verdana, arial, helvetica, sans-serif
+}
+#nav2 li a:hover {
+	text-decoration: none;
+	background: #D52E3F;
+	color: #ffffff;
+}
+#nav2 li ul {
+	left: -999em; width: 15em; position: absolute
+}
+#nav2 li:hover ul {
+	display: block; z-index: 10! important; left: auto
+}
+#nav2 li.sfhover ul {
+	display: block; z-index: 10! important; left: auto
+}
+#nav2 li ul li {
+	border-right: #ddd 1px solid; border-top: #ddd 1px; display: block! important; background: #fff; border-left: #ddd 1px solid; width: 15em; border-bottom: #ddd 1px solid
+}
+#nav2 li ul li a {
+	font-weight: normal; line-height: 20px; height: 20px; padding-top:7px; padding-bottom:7px;
+	color:#666666;
+}

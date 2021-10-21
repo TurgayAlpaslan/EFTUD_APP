@@ -1,0 +1,13 @@
+﻿.letter
+{
+}
+.letter a
+{
+	border:solid 1px #efefef;
+	padding: 3px;
+	font-weight:bold;
+}
+.letter a:hover
+{
+	background-color:Yellow;
+}

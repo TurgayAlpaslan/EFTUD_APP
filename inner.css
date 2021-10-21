@@ -1,0 +1,256 @@
+/* Banner  */
+/* -------------------------------------------------------- */
+
+#body div.bnr-adn{
+	width: 565px;
+	margin-top: 18px;
+	margin-left: 0px;
+}
+
+/* Comments  */
+/* -------------------------------------------------------- */
+
+.comments{
+	float: left;
+	width: 585px;
+	margin: 18px 0px 0px 18px;
+}
+
+.comments div.ttl{
+	float: left;
+	width: 585px;
+}
+
+.comments div.ttl a{
+	float: left;
+}
+
+.comments div.ttl b.hdr{	
+	width: 502px;
+}
+
+.comments div.lst{
+	float: left;
+	width: 547px;
+	padding: 18px;
+	border-top: 1px solid #DFDFDF;
+	border-left: 1px solid #E8E8E8;
+	border-right: 1px solid #E8E8E8;
+}
+
+.comments div.lst li{
+	padding-bottom: 9px;
+}
+
+.comments div.lst b{
+	font-size: 12px;
+}
+
+.comments div.lst span{
+	color: #ACACAC;
+	font-size: 11px;
+}
+
+.comments div.psm{
+	float: left;
+	width: 567px;
+	padding: 0px 9px 9px 9px;
+	background: #FFFFFF url('Images/bck.alt.btm.gif') no-repeat bottom left;
+}
+
+.comments div.psm div{
+	float: right;
+}
+
+.comments div.psm a, .comments div.psm a:visited, .comments div.psm span.act{
+	float: left;
+	width: 22px;
+	height: 16px;
+	margin-left: 3px;
+	color: #757575;
+	text-align: center;
+	font-size: 10px;
+	font-weight: bold;
+	line-height: 14px;
+	background-image: url('Images/btn.gif');
+	background-repeat: no-repeat;
+	background-position: -22px -1321px;
+}
+
+.comments div.psm a:hover{
+	color: #FFFFFF;
+	background-position: 0px -1321px;
+}
+
+.comments div.psm a.prv, .comments div.psm a.prv:visited{
+	overflow: hidden;
+	text-indent: -999px;
+	background-position: -66px -1321px;
+}
+
+.comments div.psm a.prv:hover{
+	background-position: -44px -1321px;
+}
+
+.comments div.psm a.act, .comments div.psm a.act:visited,  .comments div.psm span.act{
+	cursor: default;
+	color: #FFFFFF;
+	background-position: 0px -1321px;
+}
+
+.comments div.psm a.nxt, .comments div.psm a.nxt:visited{
+	overflow: hidden;
+	text-indent: -999px;
+	background-position: -110px -1321px;
+}
+
+.comments div.psm a.nxt:hover{
+	background-position: -88px -1321px;
+}
+
+/* Survey  */
+/* -------------------------------------------------------- */
+
+#body .survey div.hdr,
+#body .survey div.cnt{
+	width: 298px;
+}
+
+#body .survey div.hdr{
+	background-position: 266px 8px;
+}
+
+/* Accordion  */
+/* -------------------------------------------------------- */
+
+.accordion a.ttl{
+	width: 318px;
+}
+
+.accordion div.ttl b{
+	width: 313px;
+}
+
+.accordion div.inr{
+	width: 318px;
+}
+
+/* Other News  */
+/* -------------------------------------------------------- */
+
+#body .othernews{        
+    width: 585px;  
+    margin: 18px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background-image: none;
+}
+
+#body .othernews h3{
+    display: none;
+}
+
+#body .othernews div.top{    
+    width: 549px;
+}
+
+#body .othernews table.lst{    
+    width: 549px;
+}
+
+/* Video  */
+/* -------------------------------------------------------- */
+
+#body .video{   
+    display: inline;     
+    width: 336px;  
+    margin: 9px 9px 0px 9px;
+    padding: 0px 0px 9px 0px;
+    background: #FFFFFF url('Images/bck.ibx.btm.gif') no-repeat left bottom;
+}
+
+#body .video h3{
+    visibility: visible;
+    background: #FFFFFF url('Images/bck.ibx.top.gif') no-repeat left top;
+}
+
+#body .video div.hdr, 
+#body .video div.cnt,
+#body .video div.ftr{    
+    width: 298px;
+    margin: 0px 9px 0px 9px;
+}
+
+#body .video div.pgr{
+	position: absolute;
+	display: inline;
+	float: right;
+	top: 11px;
+	right: 10px;
+}
+
+/* Photo  */
+/* -------------------------------------------------------- */
+
+#body .photo{
+    display: inline;        
+    width: 336px;  
+    margin: 9px 9px 0px 9px;
+    padding: 0px 0px 9px 0px;
+    background: #FFFFFF url('Images/bck.ibx.btm.gif') no-repeat left bottom;
+}
+
+#body .photo h3{
+    visibility: visible;
+    background: #FFFFFF url('Images/bck.ibx.top.gif') no-repeat 0px 0px;
+}
+
+#body .photo .hdr, 
+#body .photo .ftr{    
+    width: 298px;
+    margin: 0px 9px 0px 9px;
+}
+
+#body .photo div.cnt{
+    width: 292px;
+    margin: 0px 9px 0px 9px;
+}
+
+#body .photo .cnt a.img{
+    width: 292px;
+    overflow: hidden;
+}
+
+#body .photo .cnt a.txt{
+    width: 292px;
+}
+
+#body .photo div.tmb-glr{
+    margin-left: 0px;
+}
+
+/* Survery  */
+/* -------------------------------------------------------- */
+
+#body .survey{
+    display: inline;        
+    width: 336px;  
+    margin: 9px 9px 0px 9px;
+    padding: 0px 0px 9px 0px;
+    background: #FFFFFF url('Images/bck.ibx.btm.gif') no-repeat left bottom;
+}
+
+#body .survey h3{
+    visibility: visible;
+    background: #FFFFFF url('Images/bck.ibx.top.gif') no-repeat 0px 0px;
+}
+
+#body .survey .hdr, 
+#body .survey .ftr{    
+    width: 298px;
+    margin: 0px 9px 0px 9px;
+}
+
+#body .survey div.cnt{
+    width: 298px;
+    margin: 0px 9px 0px 9px;
+}
